@@ -1,5 +1,5 @@
 body {
-  font-family:fantasy
+  font-family: fantasy;
 }
 
 article {
@@ -16,17 +16,24 @@ img {
   height: 100px;
 }
 
+h2 {
+  font-size: 22px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
 button {
   background-color: #007bff;
   color: #fff;
   border-radius: 10px;
   border: none;
   cursor: pointer;
-padding: 2px 5px;
+  padding: 2px 5px;
 }
-svg{
+svg {
   padding-top: 2px;
 }
-
-
-
