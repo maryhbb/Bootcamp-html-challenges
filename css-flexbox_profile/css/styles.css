@@ -31,3 +31,12 @@ body {
   color: #ffffff;
   border-radius: 10px;
 }
+
+.profile {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  align-self: center;
+}
