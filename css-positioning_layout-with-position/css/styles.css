@@ -98,4 +98,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  bottom: 60px;
+  left: 10px;
 }
