@@ -14,9 +14,9 @@ console.clear();
 const title = "Threads on instagram";
 const text =
   "Threads already has more than 30 million users, but that doesn’t mean it’s sure to displace Twitter.";
-let likes = 124;
+let likes = 125000;
 const user = "Paris Marx";
-let isReported = "fals";
+const isReported = false;
 
 // --^-- write your code here --^--
 
@@ -31,7 +31,7 @@ console.log(likes);
 console.log(user);
 console.log(isReported);
 
-likes = 125;
+likes++;
 
 console.log(likes);
 
