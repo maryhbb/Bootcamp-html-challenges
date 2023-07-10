@@ -42,30 +42,38 @@ body {
 }
 .element-1 {
   background-color: #3a67a4;
+  grid-column: 3 / 5;
   /* Add styles here */
 }
 
 .element-2 {
   background-color: #3a67a4;
+  grid-column: 5 / -1;
   /* Add styles here */
 }
 
 .element-5 {
   background-color: #3a67a4;
+  grid-row: span 2;
+  grid-column: span 2;
   /* Add styles here */
 }
 
 .element-8 {
   background-color: #3a67a4;
+  grid-row: span 2;
   /* Add styles here */
 }
 
 .element-fish {
   background-color: #3a67a4;
+  grid-row: 1;
+  grid-column: 1 / -1;
   /* Add styles here */
 }
 
 .element-20 {
   background-color: #3a67a4;
+  grid-row: 6 / span 2;
   /* Add styles here */
 }
