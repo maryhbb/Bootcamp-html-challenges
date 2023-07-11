@@ -30,20 +30,32 @@ number % 2 === 0
   : console.log(`${number} is an odd number `);
 
 // Part 3: Hotdogs
-const numberOfHotdogs = 42;
-let price;
 
-if (numberOfHotdogs < 5) {
-  price = numberOfHotdogs * 2;
-} else if (5 <= numberOfHotdogs && numberOfHotdogs < 100) {
-  price = numberOfHotdogs * 1.5;
-} else if (100 <= numberOfHotdogs && numberOfHotdogs < 1000000) {
-  price = numberOfHotdogs * 1;
-} else if (numberOfHotdogs >= 1000000) {
-  price = numberOfHotdogs * 0.1;
-}
+const numberOfHotdogs = 125;
+const price =
+  numberOfHotdogs < 5
+    ? numberOfHotdogs * 2
+    : numberOfHotdogs < 100
+    ? numberOfHotdogs * 1.5
+    : numberOfHotdogs < 1000000
+    ? numberOfHotdogs * 1
+    : numberOfHotdogs * 0.1;
 
-console.log(price);
+console.log(`you have to pay ${price}`);
+// const numberOfHotdogs = 42;
+// let price;
+
+// if (numberOfHotdogs < 5) {
+//   price = numberOfHotdogs * 2;
+// } else if (5 <= numberOfHotdogs && numberOfHotdogs < 100) {
+//   price = numberOfHotdogs * 1.5;
+// } else if (100 <= numberOfHotdogs && numberOfHotdogs < 1000000) {
+//   price = numberOfHotdogs * 1;
+// } else if (numberOfHotdogs >= 1000000) {
+//   price = numberOfHotdogs * 0.1;
+// }
+
+// console.log(price);
 
 // const numberOfHotdogs = 60;
 
