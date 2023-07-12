@@ -244,10 +244,39 @@ width, etc. */
 
 /* Media Query Tablet */
 /* --- */
-/* Replace this comment with your media query. */
+@media (min-width: 900px) {
+  .card-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  .product-card,
+  .intro-text {
+    width: 100%;
+  }
+}
 /* --- */
 
 /* Media Query Desktop */
 /* --- */
-/* Replace this comment with your media query. */
+@media (min-width: 1200px) {
+  .card-section {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .product-card,
+  .intro-text {
+    grid-column: span 2;
+  }
+
+  .--forest {
+    grid-column: 1 / 5;
+    height: 400px;
+  }
+
+  .--desert {
+    grid-column: 2 / span 2;
+  }
+}
 /* --- */
