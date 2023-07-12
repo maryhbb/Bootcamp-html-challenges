@@ -25,9 +25,11 @@ const number = 6;
 //   console.log(`${number} is an odd number `);
 // }
 
-number % 2 === 0
-  ? console.log(`${number} is an even number `)
-  : console.log(`${number} is an odd number `);
+// number % 2 === 0
+//   ? console.log(`${number} is an even number `)
+//   : console.log(`${number} is an odd number `);
+
+console.log(`${number} is an ${number % 2 ? "even" : "odd"} number `);
 
 // Part 3: Hotdogs
 
@@ -70,16 +72,18 @@ console.log(`you have to pay ${price}`);
 
 // Part 4: Daytime
 const currentHour = 12;
-let statement;
-currentHour < 17
-  ? (statement = "Still need to learn...")
-  : (statement = "Partytime!!!");
+// let statement;
+// currentHour < 17
+//   ? (statement = "Still need to learn...")
+//   : (statement = "Partytime!!!");
 
-console.log(statement);
+// console.log(statement);
+
+console.log(currentHour < 17 ? "Still need to learn..." : "Partytime!!!");
 
 // Part 5: Greeting
-const name = "Archibald";
-let coachName = "Roland";
-const greeting = "Hello " + "//enter your code here" + "!";
+const name = "Mary";
 
-console.log(name === coachName ? "Hello Coach!" : `Hello ${name}!`);
+const greeting = "Hello " + (name === "Roland" ? "Coach!" : `${name}!`);
+
+console.log(greeting);
