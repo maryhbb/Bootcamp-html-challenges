@@ -13,7 +13,7 @@ console.clear();
 const bookTitle = "The Lord of the Javascript";
 const author = "Mario";
 const rating = 4.2;
-const numberOfSales = 122;
+let numberOfSales = 122;
 
 // --^-- write your code here --^--
 
@@ -35,6 +35,7 @@ console.log(bookTitle);
 console.log(author);
 console.log(rating);
 console.log(numberOfSales);
+
 // --^-- write your code here --^--
 
 /*
@@ -54,4 +55,8 @@ function logBookData() {
   console.log(numberOfSales);
 }
 logBookData();
+
+numberOfSales += 2;
+logBookData();
+
 // --^-- write your code here --^--
