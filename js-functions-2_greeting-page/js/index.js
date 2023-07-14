@@ -24,10 +24,27 @@ const display = document.querySelector('[data-js="display"]');
 
 function getGreeting() {
   // Code here
+
+  const currentTime = new Date().getHours();
+  return currentTime > 6 && currentTime < 12
+    ? "Good Morning"
+    : currentTime > 13 && currentTime < 18
+    ? "Good Afternoon"
+    : currentTime > 19 && currentTime < 22
+    ? "Good Evening"
+    : "Good Night";
 }
 
 function getDayColor() {
   // Code here
+
+  const currentWeekday = new Date().getDay();
+
+  return currentWeekday === 1
+    ? "darkgray" // Monday
+    : currentWeekday >= 2 && currentWeekday <= 5
+    ? "lightblue" // Tuesday, Wednesday, Thursday, Friday
+    : "hotpink"; // Saturday, Sunday
 }
 
 display.textContent = getGreeting();
