@@ -17,15 +17,20 @@
       </p>
 
       <form for="title">
-        <fieldset>
+        <fieldset aria-describedby="description"> <!-- Added "aria-describedby" attribute -->
           <legend>Enter your information</legend>
-          <label aria-describedby="name-input">Name:</label>
+
+          <label for="name-Input" aria-describedby="name-input">Name:</label> <!-- Added "for" attribute -->
           <input id="name-Input" type="text" name="name" />
-          <label aria-describedby="age-input">Age:</label>
-          <input id="age-Input" type="text" name="age" />
-          <label aria-describedby="color-input">Color you cannot see:</label>
+
+          <label for="age-Input" aria-describedby="age-input">Age:</label> <!-- Added "for" attribute -->
+          <input id="age-Input" type="number" name="age" /> <!-- Change type to number-->
+
+          <label for="color-Input" aria-describedby="color-input">Color you cannot see:</label> <!-- Added "for" attribute -->
           <input id="color-Input" type="color" name="color" />
-          <textarea rows="7" placeholder="Leave us a message..."></textarea>
+
+          <label for="personal-message">Leave us a message:</label>  <!-- Added label instead placeholder attribute -->
+          <textarea rows="7" aria-describedby="message-input-description" ></textarea> <!-- Added "aria-describedby" attribute -->
           <button type="submit">Submit</button>
         </fieldset>
       </form>
