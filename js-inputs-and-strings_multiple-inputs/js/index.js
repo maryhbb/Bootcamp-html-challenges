@@ -14,3 +14,15 @@ Implement the following functionality:
 const firstInput = document.querySelector("[data-js=first-input]");
 const secondInput = document.querySelector("[data-js=second-input]");
 const button = document.querySelector("[data-js=button]");
+
+button.addEventListener("click", () => {
+    
+  // first fork
+  //   secondInput.value = firstInput.value;
+
+  // second fork
+  //   secondInput.value = firstInput.value.toUpperCase();
+
+  // third fork
+  [firstInput.value, secondInput.value] = [secondInput.value, firstInput.value];
+});
