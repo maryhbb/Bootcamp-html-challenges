@@ -47,30 +47,56 @@ const people = [
   },
 ];
 
+/* ------------------------------------------------------------------ */
+
 // EXERCISE 1
 // Change the value of the variable nameOfFirstPerson to equal the name of the first person.
 
-const nameOfFirstPerson = "change me";
+const nameOfFirstPerson = people[0].name;
+console.log(nameOfFirstPerson);
+
+/* ------------------------------------------------------------------ */
 
 // EXERCISE 2
 // Change the value of the variable homersOtherFriends to equal the other friends of Homer.
 
-const homersOtherFriends = "change me";
+const homersOtherFriends = people[0]["other friends"];
+console.log(homersOtherFriends);
 
+/* IMPORTANT: when the property name contains spaces or special characters, 
+you cannot use dot notation directly like objectName.propertyName.
+In such cases, you need to use bracket notation, like objectName["propertyName"]
+ */
+
+/* ------------------------------------------------------------------ */
 // EXERCISE 3
 // Change the value of the variable ageOfThirdPerson to equal the age of the third person.
 
-const ageOfThirdPerson = "change me";
+/* IMPORTANT: When using bracket notation, you need to enclose the property name in quotes (either single or double quotes) to make it a string.
+ */
 
+const ageOfThirdPerson = people[2].age;
+const ageOfThirdPerson2 = people[2]["age"];
+console.log(ageOfThirdPerson);
+
+/* ------------------------------------------------------------------ */
 // EXERCISE 4
 // Change the value of the variable mothersNameOfSecondPerson to equal the mothers name of the second person.
 
-const mothersNameOfSecondPerson = "change me";
+/* IMPORTANT: When using bracket notation, you need to enclose the property name in quotes (either single or double quotes) to make it a string.
+ */
 
+const mothersNameOfSecondPerson = people[1].parents.mothersName;
+const mothersNameOfSecondPerson2 = people[1]["parents"]["mothersName"];
+console.log(mothersNameOfSecondPerson);
+
+/* ------------------------------------------------------------------ */
 // EXERCISE 5
 // Change the value of the variable animaltypeOfLisasPet to equal the type of animal of Lisas pet.
 
-const animaltypeOfLisasPet = "change me";
+const animaltypeOfLisasPet = people[people.length - 1].pet.animal;
+const animaltypeOfLisasPet2 = people[people.length - 1]["pet"]["animal"];
+console.log(animaltypeOfLisasPet);
 
 export {
   nameOfFirstPerson,
