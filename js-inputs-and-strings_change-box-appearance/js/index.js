@@ -37,8 +37,10 @@ l (Lightness): Represents the brightness of the color and ranges from 0% (black)
 
 */
 
-inputRadius.addEventListener("input", () => {
-  const radius = inputRadius.value;
-  boxElement.style.borderRadius =
-    radius === inputRadius.max ? "50%" : `${radius}px`;
+inputRadius.addEventListener("change", () => {
+  boxElement.style.borderRadius = `${inputRadius.value}%`;
+});
+
+inputRotation.addEventListener("change", () => {
+  boxElement.style.transform = `rotate(${inputRotation.value}deg)`;
 });
