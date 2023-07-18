@@ -16,3 +16,29 @@ For further information check MDN:
 - about CSS declarations with "style": https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style
 
 */
+
+const inputColor = document.querySelector('[data-js="input-color"]');
+const inputRadius = document.querySelector('[data-js="input-radius"]');
+const inputRotation = document.querySelector('[data-js="input-rotation"]');
+
+const boxElement = document.querySelector('[data-js="box"]');
+
+inputColor.addEventListener("input", () => {
+  const currentColor = inputColor.value;
+  boxElement.style.backgroundColor = `hsl(${currentColor}, 100%, 50%)`;
+});
+
+/*
+The hsl() function takes three parameters:
+
+h (Hue): Represents the color itself and ranges from 0 to 360 degrees. It specifies the type of color, such as red, green, blue, etc.
+s (Saturation): Represents the intensity or purity of the color and ranges from 0% to 100%. A saturation of 0% will give you grayscale (no color), and a saturation of 100% will give you the full color.
+l (Lightness): Represents the brightness of the color and ranges from 0% (black) to 100% (white).
+
+*/
+
+inputRadius.addEventListener("input", () => {
+  const radius = inputRadius.value;
+  boxElement.style.borderRadius =
+    radius === inputRadius.max ? "50%" : `${radius}px`;
+});
