@@ -15,11 +15,11 @@ const inputElement = document.querySelector(`[data-js="first-input"]`);
 const buttonElement = document.querySelector(`[data-js="button-uppercase"]`);
 
 buttonElement.addEventListener("click", () => {
-  const inputValue = inputElement.value;
-  console.log(inputValue);
+  // const inputValue = inputElement.value;
+  // console.log(inputValue);
 
-  const inputValueUpper = inputValue.toUpperCase();
-  console.log(inputValueUpper);
+  // const inputValueUpper = inputValue.toUpperCase();
+  // console.log(inputValueUpper);
 
-  inputElement.value = inputValueUpper;
+  inputElement.value = inputElement.value.toUpperCase();
 });
