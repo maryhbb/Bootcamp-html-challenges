@@ -1,24 +1,19 @@
-# Handle Form Submit
+# Calculator
 
-Use JavaScript to react to the form submission.
+Build a calculator that can add, subtract, multiply and divide two numbers.
 
-Log all form data (in object form) into the console in the submit event handler.
+Add the following functionality to the submit event handler:
+
+- Use the values of the `numberA` and `numberB` inputs to perform the operation selected by the `operator` input on them. You can use the provided helper functions `add()`, `subtract()`, `multiply()` and `divide()`.
+- Assign the result to the `result` variable.
+
+> 💡 Make sure to thoroughly test the addition operation, as it can have unexpected results.
 
 > 💡 You only have to touch the `./js/index.js` file.
 
-<br>
-
-## Bonus: Calculate and log the age-badness-sum 🤷‍♀️
-
-The formula is: `age + badness`
-
-Log to the console _(replace the values between the quotes)_:
-
-> The age-badness-sum of "firstName" is "age-badness-sum"
-
 ## Development
 
-### Local Development 
+### Local Development
 
 To work locally, please install the dependencies using `npm i` first.
 
