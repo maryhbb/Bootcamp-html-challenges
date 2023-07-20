@@ -33,20 +33,26 @@ form.addEventListener("submit", (event) => {
   const b = parseInt(data.numberB);
   console.log(data);
 
-  if (data.operator === "addition") {
-    result = add(a, b);
-  }
-  if (data.operator === "subtraction") {
-    result = subtract(a, b);
-  }
+  // if (data.operator === "addition") {
+  //   result = add(a, b);
+  // }
+  // if (data.operator === "subtraction") {
+  //   result = subtract(a, b);
+  // }
 
-  if (data.operator === "multiplication") {
-    result = multiply(a, b);
-  }
-  if (data.operator === "division") {
-    result = divide(a, b);
-  }
+  // if (data.operator === "multiplication") {
+  //   result = multiply(a, b);
+  // }
+  // if (data.operator === "division") {
+  //   result = divide(a, b);
+  // }
 
+  result =
+  data.operator === "addition" ? add(a, b) :
+  data.operator === "subtraction" ? subtract(a, b) :
+  data.operator === "multiplication" ? multiply(a, b) :
+  data.operator === "division" ? divide(a, b) :
+  undefined; 
   // --^-- write your code here --^--
 
   resultOutput.textContent = result;
